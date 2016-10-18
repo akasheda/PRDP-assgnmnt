@@ -9,42 +9,62 @@
 	<link rel="stylesheet" href="./style.css">
 
 
+
+
+	<script>
+		//		$(document).ready(function () {
+		////
+		////			$('#menu').toggle(function () {
+		////					//				$('#sidebar').css('width', '0px');
+		////					$('#header').css('left', '0');
+		////				},
+		////				function () {
+		////					//				$('#sidebar').css('width', '180px');
+		////					$('#header').css('left', '180px');
+		////
+		////				});
+		//		});
+	</script>
+
 </head>
 
 <body>
 
-	<div id="head" class="well">
-		<h1>Trinet Automation Platform</h1>
+
+	<div class="wrapper">
+
+		<div id="sidebar">
+			<ul class="sidebar-nav">
+				<li role="presentation" class="active"><a href="#/">Home</a></li>
+				<li role="presentation"><a href="#/scripting">Scripting</a></li>
+				<li role="presentation"><a href="#">Reports</a></li>
+				<li role="presentation"><a href="#">Locations</a></li>
+				<li role="presentation"><a href="#/vm">VM Management</a></li>
+				<li role="presentation"><a href="#">Options</a></li>
+			</ul>
+		</div>
+		<!-- sidebar-->
+
+		<div id="header">
+			<button id="menu" class="btn btndefault"><i class="fa fa-lg fa-bars"></i></button>
+			<h2 id="title">Trinet Automation</h2>
+		</div>
+		<!--			header-->
+
+		<div id="total" ng-view>
+
+		</div>
+
 	</div>
-
-			
-			<div id="sidebar">
-				<ul class="nav nav-pills nav-stacked">
-					<li role="presentation" class="active"><a href="#">Home</a></li>
-					<li role="presentation"><a href="./scripting.html">Scripting</a></li>
-					<li role="presentation"><a href="#">Reports</a></li>
-					<li role="presentation"><a href="#">Locations</a></li>
-					<li role="presentation"><a href="#">VM Management</a></li>
-					<li role="presentation"><a href="#">Options</a></li>
-				</ul>
-			</div>
-			
-
-
-			
-
-
-
-
-
-
-
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-	<script src=”https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js”></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
+	<script src="./routing.js"></script>
+
+
 </body>
 
 </html>
