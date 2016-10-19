@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
-
-/*basic*/
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial;
-}
-
 #wrapper {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -17,72 +8,52 @@ body {
 /*sidebar*/
 
 #sidebar {
-	background: #aaa;
-	width: 200px;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: -200px;
-	display: block;
-	transition: left 0.3s ease-in;
-}
-
-#sidebar.visible {
-	left: 0;
-	transition: left 0.3s ease-in;
-}
-
-ul {
-	margin-top: 20px;
-	padding: 0;
-}
-
-ul li:nth-child(1) {
-	margin-left: 35px;
-}
-
-ul li {
-	text-decoration: none;
-	list-style: none;
-	/*	no bullet points*/
-}
-
-ul li a {
-	background: #aaa;
-	text-decoration: none;
-	color: aquamarine;
-	border-bottom: 1px solid;
-	display: block;
 	width: 180px;
-	padding: 10px;
-	/*	margin: 10px;*/
+	height: 100%;
+	padding-top: 40px;
+	position: fixed;
+	background-color: black;
+}
+
+#sidebar .sidebar-nav li {
+	margin-left: -35px;
+	display: block;
+	line-height: 3em;
+}
+
+#sidebar .sidebar-nav li a {
+	color: aliceblue;
+	font-size: 1.3em;
+	margin-left: 25px;
+}
+
+#sidebar .sidebar-nav li:hover {
+	background-color: darkgrey;
 }
 
 
-/* toggle in sidebar*/
+/*header*/
 
-div> #menu {
+#header {
 	position: absolute;
-	top: 0;
-	right: -60px;
-	vertical-align: middle;
-	display: inline-block;
-	cursor: pointer;
-	margin: 10px;
+	left: 180px;
+	float: left;
+	padding-right: 239px;
+	background-color: black;
 }
 
+#header #menu {
+	margin-top: 40px;
+	margin-left: 20px;
+}
 
-/*title*/
-
-div #title {
+#header #title {
 	font-family: 'Ruslan Display', cursive;
 	text-align: center;
-	width: 100%;
-	margin-top: 0;
-	/*	background-color: #eee;*/
-	left: 50px;
+	margin-top: -50px;
+	padding-left: 50px;
+	margin-left: 180px;
 	color: coral;
-	position: fixed;
 	font-size: 4em;
 }
 
