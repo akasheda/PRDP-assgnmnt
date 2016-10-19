@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
-
-/*basic*/
+/*body*/
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial;
-}
-
-#wrapper {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
 }
 
 
@@ -69,28 +62,4 @@ div> #menu {
 	display: inline-block;
 	cursor: pointer;
 	margin: 10px;
-}
-
-
-/*title*/
-
-div #title {
-	font-family: 'Ruslan Display', cursive;
-	text-align: center;
-	width: 100%;
-	margin-top: 0;
-	/*	background-color: #eee;*/
-	left: 50px;
-	color: coral;
-	position: fixed;
-	font-size: 4em;
-}
-
-#total {
-	margin-left: 180px;
-	top: 95px;
-	padding-top: 20px;
-	padding-left: 20px;
-	position: fixed;
-	height: 89.4%;
 }
