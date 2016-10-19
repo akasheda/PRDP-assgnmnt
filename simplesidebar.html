@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Simple SideBar</title>
+
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="simplesidebar.css">
+</head>
+
+<body>
+	<div id="sidebar">
+		<ul>
+			<li><span class="fa-4x fa fa-tripadvisor" aria-hidden="true"></span></li>
+			<li><a href="#">LINK 1</a></li>
+			<li><a href="#">LINK 2</a></li>
+			<li><a href="#">LINK 3</a></li>
+			<li><a href="#">LINK 4</a></li>
+			<li><a href="#">LINK 5</a></li>
+		</ul>
+		<div>
+			<button id="menu" class="btn-success btn"> <i class="fa fa-bars"></i> </button>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<script>
+		$(document).ready(function () {
+			$('#menu').click(function () {
+				$('#sidebar').toggleClass("visible");
+			});
+		});
+	</script>
+</body>
+
+</html>

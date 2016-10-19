@@ -1,0 +1,65 @@
+/*body*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+
+/*sidebar*/
+
+#sidebar {
+	background: #aaa;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -200px;
+	display: block;
+	transition: left 0.3s ease-in;
+}
+
+#sidebar.visible {
+	left: 0;
+	transition: left 0.3s ease-in;
+}
+
+ul {
+	margin-top: 20px;
+	padding: 0;
+}
+
+ul li:nth-child(1) {
+	margin-left: 35px;
+}
+
+ul li {
+	text-decoration: none;
+	list-style: none;
+	/*	no bullet points*/
+}
+
+ul li a {
+	background: #aaa;
+	text-decoration: none;
+	color: aquamarine;
+	border-bottom: 1px solid;
+	display: block;
+	width: 180px;
+	padding: 10px;
+	/*	margin: 10px;*/
+}
+
+
+/* toggle in sidebar*/
+
+div> #menu {
+	position: absolute;
+	top: 0;
+	right: -60px;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px;
+}
