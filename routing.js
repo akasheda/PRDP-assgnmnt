@@ -22,13 +22,14 @@ app.config(function ($routeProvider) {
 			templateUrl: "./Partials/page5.html"
 		})
 		.when("/page6", {
-			templateUrl: "./Partials/page3.html"
+			templateUrl: "./Partials/page6.html"
 		})
 		.when("/page7", {
-			templateUrl: "./Partials/page3.html"
+			templateUrl: "./Partials/page7.html"
 		})
 		.when("/page8", {
-			templateUrl: "./Partials/page3.html"
+			controller: 'lineController1',
+			templateUrl: "./Partials/page8.html"
 		});
 
 
